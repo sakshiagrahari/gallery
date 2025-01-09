@@ -32,6 +32,7 @@ const Gallery: React.FC = () => {
   }, []);
 
   const filteredImages = images.filter((image) =>
+    
     image.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
